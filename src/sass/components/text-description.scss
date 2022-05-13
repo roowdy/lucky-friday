@@ -1,0 +1,7 @@
+.text-description {
+    @include font(500, 12, 20);
+    
+    @media screen and (min-width:1680px) {
+        @include font(500, 18, 28)
+    }
+}
