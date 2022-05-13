@@ -1,0 +1,7 @@
+.subtitle {
+    @include font(700, 14, 20);
+
+    @media screen and (min-width:1200px) {
+        @include font(700, 20, 28)
+    }
+}
