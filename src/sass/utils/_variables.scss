@@ -9,4 +9,12 @@
 
     --duration: 300ms;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    $min-mob: ("min-width:480px");
+    $min-tab: ("min-width:768px");
+    $min-pc: ("min-width:1680px");
+    $max-mob: ("max-width:479px");
+    $max-tab: ("max-width:767px");
+    $max-pc: ("max-width:1679px");
 }
