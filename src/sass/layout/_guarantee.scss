@@ -5,20 +5,28 @@
 
 .guarantee__list-wrapper {
     background-color: #F1F1F1;
-    padding: 40px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    @media screen and (min-width: 768px) {
+        padding-left: 87px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-left: 291px;
+    }
 }
 
 .guarantee__list {
-    max-width: 273px;
-    padding-left: 18px;
+    max-width: 440px;
+    padding-left: 7px;
 
     @media screen and (min-width: 768px) {
-        width: 552px;
-        }
+        width: 560px;
+    }
 
     @media screen and (min-width: 1680px) {
         width: 1079px;
-        margin-bottom: 20px;
     }
 }
 
@@ -26,12 +34,16 @@
     position: relative;
     @include font(500, 12, 20);
     color: var(--alternative-text-color);
+    padding-left: 28px;
     margin-bottom: 24px;
 
     @media screen and (min-width: 768px) {
         @include font(500, 20, 28);
+        padding-left: 32px;
     }
+
     @media screen and (min-width: 1680px) {
+        padding-left: 41px;
         margin-bottom: 20px;
     }
 
@@ -48,14 +60,14 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -7.5px;
     display: inline-block;
-    background-image: url(../images/Campfire-mobile.svg);
+    background-image: url(../images/Campfire.svg);
     width: 15px;
     height: 20px;
 
     @media screen and (min-width: 1680px) {
-        background-image: url(../images/Campfire-desktop.svg);
+        left: -11px;
         width: 22px;
         height: 30px;
     }
