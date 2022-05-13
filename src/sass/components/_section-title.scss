@@ -1,4 +1,5 @@
 .section-title {
+    letter-spacing: 0.03em;        
 
     @include font(800, 20, 26);
 
@@ -8,6 +9,5 @@
 
     @media screen and (min-width:1680px) {
         @include font(800, 46, 60);
-        letter-spacing: 0.03em;        
     }
 }
