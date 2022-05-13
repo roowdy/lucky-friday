@@ -8,21 +8,54 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 8px 26px 0px #0000001A;
-    ;
+    height: 280px;
+    width: 100%;
+    color: var(--primary-color);
+
+    padding: 32px 11px 8px 11px;
+
+    transition-property: background-color;
+    @extend %transition-conduct;
+
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 16px;
+    }
 
     &:hover,
     &:focus {
         background-color: var(--accent-color);
-        color: var(--dark-theme-text-color)
+        color: var(--dark-theme-text-color);
+
+        .how-we-do__description {
+            color: var(--dark-theme-text-color);
+        }
+    
+        .how-we-do__icon {
+            fill: var(--dark-theme-text-color);
+        }
+    
+        .how-we-do__subtitle::after {
+            color: var(--dark-theme-text-color);
+        }
     }
 }
 
+
 .how-we-do__icon {
     fill: var(--accent-color);
+    margin-bottom: 20px;
+    
+    transition-property: fill;
+    @extend %transition-conduct;
 }
 
 .how-we-do__subtitle {
     margin-bottom: 4px;
+    text-align: center;
+
+    transition-property: color;
+    @extend %transition-conduct;
 }
 
 .how-we-do__subtitle::after {
@@ -33,4 +66,85 @@
     height: 32px;
     justify-content: center;
     align-items: center;
+
+    transition-property: color;
+    @extend %transition-conduct;
+
+}
+
+.how-we-do__description {
+    color: var(--secondary-text-color);
+    text-align: center;
+    
+    transition-property: color;
+    @extend %transition-conduct;
+}
+
+
+// tablet
+
+@media screen and (min-width:768px) {
+
+    .how-we-do__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+    }
+
+    .how-we-do__item {
+        height: 336px;
+        flex-basis: calc((100% - 32px) / 2);
+        padding: 40px 22px 22px 22px;
+
+        @media screen and (max-width:1280px) {
+
+            &:nth-last-child(n+3) {
+                margin-bottom: 24px;
+            }
+        }
+
+    }
+
+    .how-we-do__icon {
+        margin-bottom: 32px;
+    }
+
+    .how-we-do__subtitle {
+        margin-bottom: 8px;
+    }
+
+}
+
+
+// pc
+
+@media screen and (min-width:1680px) {
+
+    .how-we-do__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+    }
+
+    .how-we-do__item {
+        flex-basis: calc((100% - (2 *32px)) / 3);
+
+        &:nth-last-child(n+4) {
+            margin-bottom: 31px;
+        }
+
+        padding: 90px 82px;
+    }
+
+    .how-we-do__subtitle {
+        margin-bottom: 4px;
+    }
+
+
+    .how-we-do__icon {
+        height: 47px;
+    }
+
 }
