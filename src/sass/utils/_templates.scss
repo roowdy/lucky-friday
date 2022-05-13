@@ -5,3 +5,7 @@
     line-height: calc(#{$lh} / #{$fs});
 }
 
+%transition-conduct {
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+}
