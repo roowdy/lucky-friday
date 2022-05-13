@@ -1,0 +1,11 @@
+
+@mixin font($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs+px;
+    line-height: calc(#{$lh} / #{$fs});
+}
+
+%transition-conduct {
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+}
