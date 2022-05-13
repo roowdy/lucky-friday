@@ -1,0 +1,80 @@
+.guarantee__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.guarantee__list-wrapper {
+    background-color: #F1F1F1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    @media screen and (min-width: 768px) {
+        padding-left: 87px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-left: 291px;
+    }
+}
+
+.guarantee__list {
+    padding-left: 7px;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 560px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        width: 1079px;
+    }
+}
+
+.guarantee__item {
+    position: relative;
+    @include font(500, 12, 20);
+    color: var(--alternative-text-color);
+    padding-left: 28px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        @include font(500, 20, 28);
+        padding-left: 32px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-left: 41px;
+        margin-bottom: 20px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+        border-left: 1px dashed var(--secondary-text-color);
+    }
+}
+
+.guarantee__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7.5px;
+    display: inline-block;
+    background-image: url(../images/Campfire.svg);
+    width: 15px;
+    height: 20px;
+    z-index: 1;
+
+    @media screen and (min-width: 1680px) {
+        left: -11px;
+        width: 22px;
+        height: 30px;
+    }
+}
+
+
+.guarantee__item--accent {
+    color: var(--accent-color);
+}
