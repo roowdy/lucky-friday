@@ -20,6 +20,7 @@
 }
 
 .guarantee__list {
+    border-left: 1px dashed var(--secondary-text-color);
 
     @media screen and (min-width: 768px) {
         width: 560px;
@@ -73,9 +74,4 @@
 
 .guarantee__item-accent {
     color: var(--accent-color);
-}
-
-.guarantee__border {
-    padding-bottom: 20px;
-    border-left: 1px dashed var(--secondary-text-color);
 }
