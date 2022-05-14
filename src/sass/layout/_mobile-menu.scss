@@ -1,0 +1,138 @@
+.mobile-menu {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: rgba(17, 21, 24, 0.9);
+    ;
+    overflow: auto;
+    z-index: 100;
+}
+
+.mobile-menu.is-open {
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile-menu__container {
+    position: relative;
+    padding: 20px;
+    height: 100vh;
+}
+
+.menu-logo__img {
+    width: 80px;
+    margin-bottom: 40px;
+
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+
+    &:hover .menu-close-icon,
+    &:focus .menu-close-icon {
+        fill: var(--accent-color);
+
+    }
+}
+
+.menu-close-icon {
+    fill: var(--dark-theme-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-navigation-list {
+    margin-bottom: 40px;
+}
+
+.menu-navigation-list__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dark-theme-text-color);
+}
+
+.navigation-list__link--active {
+    color: var(--accent-color);
+}
+
+.menu-navigation-list__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.menu-modal-button {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    background-color: transparent;
+}
+
+@media screen and(min-width:768px) {
+    .menu-modal-button {
+        display: none;
+    }
+
+    .menu-navigation-list {
+        position: absolute;
+        top: 165px;
+        left: 216px;
+        margin-bottom: 0;
+    }
+
+    .menu-navigation-list__link {
+        font-size: 26px;
+    }
+
+    .menu-logo__img {
+        width: 128px;
+    }
+
+    .mobile-menu__container {
+        padding: 40px 32px;
+    }
+
+    .menu-close-btn {
+        top: 56px;
+        right: 32px;
+    }
+}
+
+@media screen and(min-width:1680px) {
+    .mobile-menu {
+        display: none;
+    }
+}
