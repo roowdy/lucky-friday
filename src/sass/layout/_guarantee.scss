@@ -12,10 +12,13 @@
 
     @media screen and (min-width: 768px) {
         padding-left: 87px;
+        padding-top: 32px;
+        padding-bottom: 40px;
+        padding-right: 58px;
     }
 
     @media screen and (min-width: 1680px) {
-        padding-left: 291px;
+        padding: 60px 280px;
     }
 }
 
@@ -26,7 +29,7 @@
     }
 
     @media screen and (min-width: 1680px) {
-        width: 1079px;
+        width: 1090px;
     }
 }
 
@@ -76,6 +79,6 @@
 }
 
 .guarantee__border {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     border-left: 1px dashed var(--secondary-text-color);
 }
