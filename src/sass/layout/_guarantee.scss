@@ -23,7 +23,6 @@
 }
 
 .guarantee__list {
-    border-left: 1px dashed var(--secondary-text-color);
 
     @media screen and (min-width: 768px) {
         width: 560px;
@@ -39,7 +38,6 @@
     @include font(500, 12, 20);
     color: var(--alternative-text-color);
     padding-left: 28px;
-    margin-bottom: 24px;
 
     @media screen and (min-width: 768px) {
         padding-left: 32px;
@@ -48,11 +46,15 @@
     @media screen and (min-width: 1680px) {
         @include font(500, 20, 28);
         padding-left: 41px;
-        margin-bottom: 20px;
     }
+}
 
-    &:last-child {
-        margin-bottom: 0;
+.guarantee__item:not(:last-child) {
+    padding-bottom: 24px;
+    border-left: 1px dashed var(--secondary-text-color);
+
+    @media screen and (min-width: 1680px) {
+        padding-bottom: 20px;
     }
 }
 
@@ -77,9 +79,4 @@
 
 .guarantee__item-accent {
     color: var(--accent-color);
-}
-
-.guarantee__border {
-    margin-bottom: 20px;
-    border-left: 1px dashed var(--secondary-text-color);
 }
