@@ -7,7 +7,8 @@
     background-color: #F1F1F1;
     padding-top: 40px;
     padding-bottom: 40px;
-    
+    padding-left: 7px;
+
     @media screen and (min-width: 768px) {
         padding-left: 87px;
     }
@@ -18,8 +19,6 @@
 }
 
 .guarantee__list {
-    padding-left: 7px;
-    margin: 0;
 
     @media screen and (min-width: 768px) {
         width: 560px;
@@ -38,11 +37,11 @@
     margin-bottom: 24px;
 
     @media screen and (min-width: 768px) {
-        @include font(500, 20, 28);
         padding-left: 32px;
     }
 
     @media screen and (min-width: 1680px) {
+        @include font(500, 20, 28);
         padding-left: 41px;
         margin-bottom: 20px;
     }
@@ -50,21 +49,18 @@
     &:last-child {
         margin-bottom: 0;
     }
-
-    &:not(:last-child) {
-        border-left: 1px dashed var(--secondary-text-color);
-    }
 }
 
 .guarantee__item::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -7.5px;
+    left: -7px;
     display: inline-block;
     background-image: url(../images/Campfire.svg);
-    width: 15px;
-    height: 20px;
+    background-size: contain;
+    width: 14px;
+    height: 19px;
     z-index: 1;
 
     @media screen and (min-width: 1680px) {
@@ -74,7 +70,11 @@
     }
 }
 
-
 .guarantee__item--accent {
     color: var(--accent-color);
+}
+
+.guarantee__border {
+    padding-bottom: 20px;
+    border-left: 1px dashed var(--secondary-text-color);
 }
