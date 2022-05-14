@@ -5,11 +5,24 @@
 
 // Стили для файла с примером HTML-фрагмента
 // @import './example';
+
+// utils:
 @import './utils/variables';
+@import './utils/templates';
+@import './utils/visually-hidden';
+// base:
 @import './base/common';
 @import './base/container';
-@import './utils/visually-hidden';
-@import './utils/templates';
+// components
+@import './components/section-title';
+@import './components/subtitle';
+@import './components/text-description.scss';
 @import './components/navigation-list';
+// layout:
+@import './layout/hero';
+@import './layout/how-we-do';
+@import './layout/guarantee';
 @import './layout/header';
 @import './layout/mobile-menu';
+
+
