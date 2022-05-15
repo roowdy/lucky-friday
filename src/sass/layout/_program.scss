@@ -1,77 +1,67 @@
 .program-section{
+    position: relative;
+    overflow: hidden;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 145px;
 
-    &::after{
-        content: 'url(../)';
-    }
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url("../images/program-mobile.png");
+        bottom: 40px;
+        right: -29px;
+        width: 176px;
+        height: 137px;
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .box {
-        background-image: url('../images/mobile/bg-hero@2x.jpg');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .box {
+            background-image: url("../images/program-mobile@2x.png");
+        }
     }
 }
 
 .program {
     background-color: var(--primary-color);
 }
+
+.program-wrapper {
+margin: 0 auto;
+}
+
+.program-semester__wrapper {
+    margin-left: 26px;
+}
+
+.program-semesters-list {
+    position: relative;
+    margin-top: -10px;
+}
+
+
+.program-semesters-list__item {
+
+    &:not(:last-child) {
+        padding-bottom: 40px;
+        border-left: 1px solid #FFFFFF;
+
+    }
+}
+
+.program-timetable-list__item {
+    margin-bottom: 4px;
+}
+
+// Title
 .program__title_theme_dark {
     padding-bottom: 40px;
     text-align: center;
     color: var(--dark-theme-text-color);
 }
-// .program-wrapper {  
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-   
-//    }
-
-.program-semesters-list {
-    position: relative;
-  
-
-}
-
-
-.program-semesters-list__item {
-
-            &::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                background-color: var(--accent-color);
-                    }
-
-}
-
-.program-semesters-list__item {
-    padding-left: 20px;
-
-
-    &:not(:last-child) {
-            padding-bottom: 40px;
-            border-left: 1px solid #FFFFFF;;
-        }    
-}
-
-
-.program-timetable-list {
-  
-
-}
-
-
-
-
-
 .program-semestr-list__title {
-    
+    display: inline-block;
+    margin-bottom: 4px;
     font-weight: 700;
         font-size: 14px;
         line-height: 2;
@@ -82,31 +72,202 @@
 
 
 .program-timetable-list__title {
+    margin-bottom: 4px;
     font-weight: 700;
         font-size: 12px;
-        line-height: 1.64;
-        display: flex;
-        align-items: center;
+        line-height: 1.67;
         letter-spacing: 0.08em;
         color: var(--accent-color);
 }
 
-
 .program-courses-list__title {
-font-weight: 500;
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
-  
-
     letter-spacing: 0.08em;
-
     color: var(--secondary-text-color);
-
     opacity: 0.5;
+}
+// end title
+
+@media screen and (max-width:1679px) {
+    .program-semesters-list__item {
+    
+            &::before {
+                content: '';
+                position: absolute;
+                left: -6px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                justify-content: center;
+                background-color: var(--accent-color);
+            }
+        }
+
+}
+
+@media screen and (max-width:767px) {
+.program-wrapper {
+        max-width: 176px;
+        }
 }
 
 
 
+// Tablet/
+@media screen and (min-width:768px) {
+    .program-section {
+        padding-top: 60px;
+        padding-bottom: 180px;
+
+    &::after {
+            position: absolute;
+            content: '';
+            background-image: url("../images/program-tablet.png");
+            bottom: 80px;
+            right: 0;
+            width: 368px;
+            height: 268px;
+        }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .box {
+            background-image: url("../images/program-tablet@2x.png");
+        }
+    }
+        }
+
+.program-wrapper {
+
+    padding-left: 82px;
+}
+    .program__title_theme_dark {
+        text-align: left;
+    }
+
+.program-timetable-list {
+    display: flex;
+}
+.program-timetable-list__item {
+    max-width: 150px;
+
+    &:not(:last-child){
+        padding-right: 40px;
+    }
+}
+
+.program-semester__wrapper {
+    margin-left: 112px;
+}
+.program-semestesr-list__item {
+    padding-left: 102px;
+}
+}
+// End Tablet/
 
 
+// Desktop
+
+@media screen and (min-width:1680px) {
+    .program {
+        position: relative;
+    }
+
+    .program-section {
+ 
+        padding-top: 80px;
+        padding-bottom: 237px;
+
+
+
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url("../images/program-desktop.png");
+        background-size: cover;
+        left: -88px;
+        bottom: -122px;
+        width: 686px;
+        height: 510px;
+                    
+                }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .box {
+            background-image: url("../images/program-desktop@2x.png");
+        }
+    }
+}
+
+
+    .program-wrapper {
+        padding-left: 136px;
+        border-top: 1px solid #FFFFFF;
+    }
+    .program-semesters-list {
+        display: flex;
+    }
+    .program-semester__wrapper{
+        padding-top: 48px;
+        margin-left: 0;
+    }
+
+    .program-semesters-list__item {
+
+            &::before {
+                    content: '';
+                    position: absolute;
+                    top: 1px;
+                    width: 17px;
+                    height: 16px;
+                    border-radius: 50%;
+                    justify-content: center;
+                    background-color: var(--accent-color);
+                }
+
+        &:not(:last-child) {
+            margin-right: 40px;
+            border-left: none;
+        }
+    }
+
+    .program-semestr-list__title {
+        display: inline-block;
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 0.93;
+    }
+
+    .program-timetable-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .program-timetable-list__item {
+        max-width: 240px;
+
+        &:not(:last-child) {
+            padding-right: 40px;
+        }
+    }
+    .program__title_theme_dark {
+        padding-bottom: 88px;
+    }
+
+    .program-timetable-list__title {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 1.65;
+    }
+
+    .program-courses-list__title {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
 
