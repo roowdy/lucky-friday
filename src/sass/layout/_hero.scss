@@ -56,9 +56,15 @@
     @include font (700, 14, 22);
     letter-spacing: 0.08em;
     margin-bottom: 40px;
+    width: 260px;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 48px;
+        width: 270px;
+    }
+
+    @media screen and (min-width:1680px) {
+        width: 500px;
     }
 }
 
