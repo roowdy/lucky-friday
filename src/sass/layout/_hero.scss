@@ -1,15 +1,15 @@
 .hero {
-    padding-top: 40px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 80px;
-        padding-bottom: 84px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     @media screen and (min-width: 1680px) {
-        padding-top: 40px;
-        padding-bottom: 45px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -21,9 +21,12 @@
 }
 
 .hero__description-wrapper {
+    padding-left: 2px;
+
     @media screen and (min-width:1680px) {
         width: 560px;
         padding-top: 40px;
+        padding-left: 0;
     }
 }
 
@@ -50,13 +53,19 @@
         margin-bottom: 48px;
     }
 }
-.hero__description--main-accent {
-    color: var(--accent-color);
-}
+
 .hero__description--secondary-accent {
     font-weight: 500;
     color: var(--secondary-text-color);
     margin-bottom: 0;
+}
+
+.hero__description--main-accent {
+    color: var(--accent-color);
+
+    @media screen and (min-width:1680px) {
+        color: var(--primary-color);
+    }
 }
 
 .hero__button-link {
