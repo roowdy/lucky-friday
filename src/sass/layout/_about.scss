@@ -1,0 +1,107 @@
+    .about {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .about-container {
+        display: block;
+    }
+
+    .about__title {
+        margin-bottom: 20px;
+    }
+
+    .teacher-foto {
+        margin-bottom: 20px;
+    }
+
+    .teacher-name {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: #111518;
+        margin-bottom: 8px;
+    }
+    
+    .skills {
+        padding-top: 20px;
+        margin-bottom: 37px;
+        padding-left: 25px;
+        border-top: 1px solid #b9b9b9;
+    }
+
+    .skills-item {
+        position: relative;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.06em;
+        list-style: none;
+       
+        &:not(:last-child) {
+        margin-bottom: 12px;
+        }
+    }
+    
+    .skills-item::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -25px;
+        display: inline-block;
+        background-image: url('../images/skill-list-icon.svg');
+        width: 17px;
+        height: 14px;
+        
+    }
+    .teacher-about::before {
+        content: "";
+        display: block;
+        background-color: var(--accent-color);
+        width: 20px;
+        height: 2px;
+        margin-bottom: 22px;
+    }
+    .teacher-about {
+        max-width: 480px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.67;
+        color: var(--secondary-text-color);
+        margin-bottom: 8px;
+    }
+    
+    .certificate {
+        // min-width: 280px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.67;
+        text-decoration-line: underline;
+        color: var(--accent-color);
+    }
+// 320px+
+@media screen and (max-width: 479px) {
+    .container {
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+// 768px+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .about-container {
+        display: flex;
+    } 
+    .wrapper2 {
+        display: block;
+    }
+}
+
+
