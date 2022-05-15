@@ -25,13 +25,23 @@
 .program {
     background-color: var(--primary-color);
 }
+.border-wrapper {
+    display: flex;
 
+}
+.border{
+    margin-top: 10px;
+        border-left: 1px solid #FFFFFF;
+        margin-left: auto;
+        margin-bottom: 80px;
+    
+}
 .program-wrapper {
-margin: 0 auto;
+margin: 0 auto 0 0;
 }
 
 .program-semester__wrapper {
-    margin-left: 26px;
+    margin-left: 20px;
 }
 
 .program-semesters-list {
@@ -44,7 +54,7 @@ margin: 0 auto;
 
     &:not(:last-child) {
         padding-bottom: 40px;
-        border-left: 1px solid #FFFFFF;
+        // border-left: 1px solid #FFFFFF;
 
     }
 }
@@ -96,7 +106,8 @@ margin: 0 auto;
             &::before {
                 content: '';
                 position: absolute;
-                left: -6px;
+                left: -12px;
+                margin-top: 10px;
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
@@ -137,13 +148,19 @@ margin: 0 auto;
             background-image: url("../images/program-tablet@2x.png");
         }
     }
-        }
+    }
 
 .program-wrapper {
 
-    padding-left: 82px;
+    padding-left: 0;
 }
-    .program__title_theme_dark {
+.border {
+    margin-top: 10px;
+    border-left: 1px solid #FFFFFF;
+    margin-bottom: 80px;
+}
+
+.program__title_theme_dark {
         text-align: left;
     }
 
@@ -159,7 +176,7 @@ margin: 0 auto;
 }
 
 .program-semester__wrapper {
-    margin-left: 112px;
+    margin-left: 107px;
 }
 .program-semestesr-list__item {
     padding-left: 102px;
@@ -176,13 +193,9 @@ margin: 0 auto;
     }
 
     .program-section {
- 
         padding-top: 80px;
         padding-bottom: 237px;
-
-
-
-
+        
     &::after {
         position: absolute;
         content: '';
@@ -202,12 +215,22 @@ margin: 0 auto;
         }
     }
 }
+.border-wrapper {
+    flex-direction: column;
 
-
+}
+    .border {
+        margin: 0;
+        border-left: none;
+        border-bottom: 1px solid #FFFFFF;
+        line-height: 0;
+}
+                
     .program-wrapper {
         padding-left: 136px;
-        border-top: 1px solid #FFFFFF;
+        // border-top: 1px solid #FFFFFF;
     }
+
     .program-semesters-list {
         display: flex;
     }
