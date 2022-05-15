@@ -1,0 +1,38 @@
+.main-navigation {
+    display: none;
+}
+
+@media screen and(min-width:1680px) {
+    .main-navigation {
+        display: block;
+    }
+
+    .navigation-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation-list__item {
+        margin-right: 40px;
+       
+    }
+
+    .navigation-list__link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+}
