@@ -217,7 +217,7 @@ margin: 0 auto;
     }
 
     .program-semesters-list__item {
-
+        width: 240px;
             &::before {
                     content: '';
                     position: absolute;
@@ -249,7 +249,7 @@ margin: 0 auto;
     }
 
     .program-timetable-list__item {
-        max-width: 240px;
+
 
         &:not(:last-child) {
             padding-right: 40px;
