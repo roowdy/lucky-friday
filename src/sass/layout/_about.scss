@@ -17,7 +17,7 @@
     }
 }
     .about {
-        padding-top: 40px;
+       
         padding-bottom: 40px;
     }
     
@@ -108,6 +108,12 @@
         padding-left: 32px;
         padding-right: 32px;
     }
+    .about {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    
+          .w
     .about__title {
         margin-bottom: 40px;
     }
@@ -144,6 +150,11 @@
         width: 1680px;
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .about {
+        padding-top: 0px;
+        padding-bottom: 60px;
     }
     .wrapper-img {
         margin-right: 172px;
