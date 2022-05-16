@@ -84,7 +84,6 @@
 
     .section-contacts__description {
         @include font (600, 14, 17);
-        
     }
 
     .contacts-form__button {
@@ -95,7 +94,7 @@
     .contacts-form {
         margin-top: 24px;
     }
-    
+
     .contacts-form__input {
         width: 335px;
     }
@@ -110,7 +109,7 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    
+
     .section-contacts__title {
         @include font (800, 46, 60);
         width: 1090px;
@@ -118,7 +117,7 @@
         margin-right: auto;
     }
 
-    .section-contacts__description{
+    .section-contacts__description {
         @include font (600, 30, 37);
     }
 
@@ -131,6 +130,7 @@
         padding-top: 25px;
         padding-bottom: 25px;
     }
+
     .contacts-form__button {
         @include font (700, 14, 17);
         width: 530px;
@@ -145,6 +145,7 @@
         @include font (600, 20, 24);
         letter-spacing: 0.08em;
     }
+
     .contacts-form__input--bottom {
         margin-top: 32px;
     }

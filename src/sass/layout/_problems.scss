@@ -37,7 +37,7 @@
         background-image: linear-gradient(to bottom,
                 var(--primary-color) 61%,
                 #fff 39%);
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
 
 }
@@ -48,19 +48,6 @@
 
     .section_problems {
         padding-top: 80px;
-
-        // position: relative;
-
-        // &::after {
-        //     position: absolute;
-        //     content: '';
-        //     background-image: url("../images/gray_fire.svg");
-        //     background-size: cover;
-        //     width: 405px;
-        //     height: 475px;
-        //     bottom: 200px;
-        //     right: 0;
-        // }
 
         background-image: linear-gradient(to bottom,
                 var(--primary-color) 72%,
@@ -77,7 +64,7 @@
 
         background-image: url("../images/gray_fire.svg");
         background-repeat: no-repeat;
-        background-position: right -20px bottom 140px;
+        background-position: right -20px bottom 138px;
         background-size: 405px 475px;
         overflow: visible;
 
