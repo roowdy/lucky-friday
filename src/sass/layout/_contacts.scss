@@ -1,9 +1,9 @@
 .section-contacts {
     text-align: center;
-    background-color: rgba(17, 21, 24, 0.8);
-    // background-image: url('../images/contacts/bg-contacts-mobile.jpg');
+    background-color: rgba(17, 21, 24, 0.9);
+    background-image: url('../images/contacts/bg-contacts-mobile.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    // background-color: rgba(17, 21, 24, 0.911);
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -72,6 +72,11 @@
 
 @media screen and (min-width: 768px) {
 
+    .section-contacts {
+        background-color: rgba(17, 21, 24, 0.9);
+        background-image: url('../images/contacts/bg-contacts-tablet.png');
+    }
+
     .section-contacts__title {
         @include font (800, 26, 34);
         margin-bottom: 40px;
@@ -100,8 +105,8 @@
 @media screen and (min-width: 1680px) {
 
     .section-contacts {
-        background-color: rgba(17, 21, 24, 0.8);
-        // background-image: url('../images/contacts/bg-contacts.jpg');
+        background-color: rgba(17, 21, 24, 0.9);
+        background-image: url('../images/contacts/bg-contacts.png');
         padding-top: 80px;
         padding-bottom: 80px;
     }
