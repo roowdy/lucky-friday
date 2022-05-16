@@ -58,6 +58,7 @@
 
 .menu-navigation-list {
     margin-bottom: 40px;
+   
 }
 
 .menu-navigation-list__link {
@@ -69,11 +70,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--dark-theme-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.navigation-list__link--active {
-    color: var(--accent-color);
-}
 
 .menu-navigation-list__item:not(:last-child) {
     margin-bottom: 8px;
