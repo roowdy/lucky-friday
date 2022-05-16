@@ -1,81 +1,74 @@
-.problems {
+.section_problems {
     padding-top: 24px;
-    padding-bottom: 24px;
     }
 
-.problems-linear-gradient {
-        background-color: #111518;
-        color: #ffffff;
-//         background-image: linear-gradient(to bottom, 
-//         #111518 30%,
-//         #ffffff 70%);
-//  }
-}
- 
- .problems-main{
-     padding-top: 24px;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-bottom: 24px;
-     font-weight: 800;
-     font-size: 24px;
+.orange-text {
+    color: var(--accent-color);
 }
 
-.problems-number {
-    background-color: #ffffff;
-    padding-left: 32px;
-    padding-top: 20px;
-    padding-bottom: 24px;
-    padding-right: 20px;
-}
-
-.problems-flex-container {
+.problems-title__row {
     display: block;
-    @media screen and (min-width:768px){
-        display: flex;
-        flex-wrap: wrap;
+}
+
+.section-title_problems {
+    margin-bottom: 24px;
+}
+
+.section_problems {
+    background-image: linear-gradient(to bottom,
+    var(--primary-color) 70%,
+    #fff 30%);
+    padding-bottom: 80px;
+}
+
+// tab
+
+@media screen and (min-width:768px) {
+
+    .section_problems {
+        padding-top: 40px;
+    }
+
+    .section-title_problems {
+        margin-bottom: 30px;
+    }
+    
+    .section_problems {
+        background-image: linear-gradient(to bottom,
+        var(--primary-color) 61%,
+        #fff 39%);
+        padding-bottom: 80px;
     }
     
 }
 
-.problem-flex-item {
-    margin-bottom: 8px;
-    @media screen and (min-width:768px){
-        width: calc(100% / 2);
+// pc
+
+
+@media screen and (min-width:1680px) {
+
+    .section_problems {
+        padding-top: 80px;
+        position: relative;
+
+        // &::after {
+        //     content: url("data:image/svg+xml; utf8, <path d="M28.325 21.831c-0.373-0.836-0.887-1.659-1.639-2.609-1.896-2.386-2.474-7.706-2.481-7.757-0.026-0.255-0.206-0.466-0.443-0.542-0.244-0.077-0.508-0.006-0.681 0.185-2.262 2.533-1.311 6.443-0.797 8.006 0.141 0.427 0.296 0.931 0.405 1.442 0.835 4.127-0.778 5.996-1.157 6.373-0.366 0.102-0.617 0.051-0.848-0.198-0.797-0.874-1.060-3.738-0.688-7.47 0.077-0.759 0.058-1.442-0.051-2.080-0.786-4.587-3.668-7.529-4.402-8.561-2.018-2.985-2.224-7.955-2.23-7.999-0.006-0.236-0.141-0.447-0.353-0.549-0.206-0.102-0.456-0.089-0.649 0.045-3.368 2.29-3.078 7.808-2.609 10.889 0.109 0.714 0.321 1.442 0.688 2.36 1.305 3.285-0.257 7.527-0.27 7.566s-0.026 0.070-0.032 0.108c-0.199 1.046-0.533 1.671-0.906 1.671-0.039 0-0.077-0.006-0.122-0.019-0.456-0.096-0.694-0.581-0.7-1.002-0.026-5.441-5.482-7.272-5.54-7.291-0.244-0.077-0.514-0.006-0.681 0.191-0.174 0.198-0.206 0.472-0.090 0.702 0.064 0.134 0.27 0.721 0.129 2.794-0.122 1.863-0.463 3.706-1.009 5.473-1.298 4.236-1.093 8.248-1.080 8.439 0.998 10.864 16.609 12.768 25.873 6.647 1.015-0.67 1.844-1.435 2.455-2.277 3.419-4.721 1.407-11.131-0.090-14.538zM4.579 32.21c0.019 0.351-0.251 0.651-0.604 0.67h-0.039c-0.341 0-0.623-0.262-0.643-0.6-0.058-0.931-0.045-1.907 0.026-2.966 0.026-0.351 0.334-0.612 0.688-0.593 0.353 0.026 0.623 0.332 0.598 0.683-0.071 1.008-0.084 1.927-0.026 2.807zM4.893 26.558c-0.039 0.325-0.315 0.561-0.636 0.561-0.026 0-0.051 0-0.084-0.006-0.347-0.045-0.598-0.357-0.559-0.708l0.308-2.462c0.045-0.344 0.36-0.593 0.72-0.555 0.353 0.045 0.604 0.364 0.559 0.714l-0.308 2.456z"></path>
+        //     </symbol>");
+        //     left: 50%;
+        //     bottom: 50%;
+        // }
+
     }
-    @media screen and (min-width:1600px)
-   {
-       width: calc(100% / 3);
-  } 
-}
 
-.problem-flex-item:last-child {
-    margin-bottom: 0;
-}
-
-.problem-flex-item:nth-child(n+5) {
-    @media screen and (min-width:768px){
-        margin-bottom: 0;
+    .section-title_problems {
+        margin-bottom: 80px;
     }
+    
+    .section_problems {
+        background-image: linear-gradient(to bottom,
+        var(--primary-color) 72%,
+        #fff 28%);
+        padding-bottom: 80px;
+    }
+    
 }
-
-.problem-flex-item:nth-last-child(-n + 3) {
-    @media screen and (min-width: 1200px) {
-     margin-bottom: 0;
-      }
- }
-
-.problem-number-list {
-    padding-top: 20px;
-    padding-bottom: 24px;
-}
-
-.problem-number-item {
-    color: #111518;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(20 / 14); 
-    font-style: bold;
-}
-
-
