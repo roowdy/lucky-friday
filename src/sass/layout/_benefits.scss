@@ -1,86 +1,144 @@
-.benefits {
-    
-    padding-bottom: 24px;
+.container_benefits {
+    @media screen and (max-width:480px) {
+        width: 100%;
+    }
+}
+
+.section_benefits {
+    padding-bottom: 40px;
+    background-image: linear-gradient(to bottom,
+    var(--primary-color) 60%,
+    #fff 40%);
+
+    z-index: -10;
+}
+
+.section-title_benefits {
+    color: var(--dark-theme-text-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+}
+
+.benefits-wrapper {
+    width: 100%;
+    box-shadow: -5px 8px 26px 0px #0000000A;
+    background-color: #fff;
+    padding: 20px 24px 20px 20px;
+}
+
+// counters:
+
+.benefits-list {
+    counter-reset: benefit;
+    list-style: none;
+}
+
+.benefits-item {
+    @extend .subtitle;
+
+    padding-left: 10px;
+
+    &:not(:last-child) {
+        @media screen and (max-width:767px) {
+        margin-bottom: 40px;
+        }
     }
 
-.benefits-choose {
-        background-color: #111518;
-        color: #ffffff;
-//         background-image: linear-gradient(to bottom, 
-//         #111518 30%,
-//         #ffffff 70%);
-//  }
-}
- 
- .benefits-people{
-     padding-top: 24px;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-bottom: 24px;
-     font-weight: 800;
-     font-size: 24px;
-     @media screen and (min-width:1600px)
-     {
-         display: none;
-    } 
+    &:before {
+        counter-increment: benefit;
+        content: "— 0" counter(benefit);
 
+        color: var(--accent-color);
+
+        display: block;
+        margin-bottom: 8px;
+    }
 }
 
-.benefits-number {
-    background-color: #ffffff;
-    padding-left: 32px;
-    padding-top: 20px;
-    padding-bottom: 24px;
-    padding-right: 20px;
-}
+// tab:
 
-.benefits-flex-container {
-    display: block;
-    @media screen and (min-width:768px){
+@media screen and (min-width:768px) {
+
+    .section_benefits {
+        background-image: linear-gradient(to bottom,
+        var(--primary-color) 35%,
+        #fff 35%,
+        #fff 35%);
+    }
+
+    .section-title_benefits {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .section-title__first-part {
+        margin-right: 0.35em;
+    }
+
+    .benefits-wrapper {
+        padding: 40px 112px 40px 92px;
+    }
+
+    .benefits-list {
+
         display: flex;
         flex-wrap: wrap;
+        column-gap: 32px;
     }
-    
-}
 
-.benefits-flex-item {
-    margin-bottom: 8px;
-    @media screen and (min-width:768px){
-        width: calc(100% / 2);
+    .benefits-item {
+        flex-basis: calc((100% - 32px) / 2);
+
+        &:not(:nth-last-of-type(-n+2)) {
+        margin-bottom: 40px;
     }
-    @media screen and (min-width:1600px)
-   {
-       width: calc(100% / 3);
-  } 
+
+}
 }
 
-.benefits-flex-item:last-child {
-    margin-bottom: 0;
-}
+// pc:
 
-.benefits-flex-item:nth-child(n+5) {
-    @media screen and (min-width:768px){
-        margin-bottom: 0;
+@media screen and (min-width:1680px) {
+
+    .section_benefits {
+        background-image: linear-gradient(to bottom,
+        var(--primary-color) 44%,
+        #fff 44%);
+
+        z-index: -10;
     }
+
+    .section-title_benefits {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    .benefits-wrapper {
+        padding: 60px 32px 60px 140px;
+    }
+
+    .benefits-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 32px;
+    }
+
+    .benefits-item {
+        flex-basis: calc((100% - 64px) / 3);
+
+        &:not(:nth-last-of-type(-n+3)) {
+        margin-bottom: 40px;
+    }
+
+}
 }
 
-.benefits-flex-item:nth-last-child(-n + 3) {
-    @media screen and (min-width: 1200px) {
-     margin-bottom: 0;
-      }
- }
-
-.benefits-choose-list {
-    padding-top: 20px;
-    padding-bottom: 24px;
-}
-
-.benefits-choose-item {
-    color: #111518;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(20 / 14); 
-    font-style: bold;
-}
-
-
+// // //

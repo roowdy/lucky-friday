@@ -1,3 +1,7 @@
+.section_how-we-do {
+    padding-bottom: 40px;
+}
+
 .how-we-do-title {
     margin-bottom: 32px;
     text-align: center;
@@ -16,9 +20,10 @@
     transition-property: background-color;
     @extend %transition-conduct;
 
-
-    @media screen and (max-width:768px) {
-        margin-bottom: 16px;
+    &:not(:last-child) {
+        @media screen and (max-width:768px) {
+            margin-bottom: 16px;
+        }
     }
 
     &:hover,
@@ -29,11 +34,11 @@
         .how-we-do__description {
             color: var(--dark-theme-text-color);
         }
-    
+
         .how-we-do__icon {
             fill: var(--dark-theme-text-color);
         }
-    
+
         .how-we-do__subtitle::after {
             color: var(--dark-theme-text-color);
         }
@@ -44,7 +49,7 @@
 .how-we-do__icon {
     fill: var(--accent-color);
     margin-bottom: 20px;
-    
+
     transition-property: fill;
     @extend %transition-conduct;
 }
@@ -74,7 +79,7 @@
 .how-we-do__description {
     color: var(--secondary-text-color);
     text-align: center;
-    
+
     transition-property: color;
     @extend %transition-conduct;
 }
@@ -117,6 +122,10 @@
 // pc
 
 @media screen and (min-width:1680px) {
+
+    .section_how-we-do {
+        padding-bottom: 80px;
+    }
 
     .how-we-do-title {
         text-align: left;
