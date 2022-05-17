@@ -8,19 +8,20 @@
     }
 
     @media screen and (min-width: 480px) {
-    .container {
-        width: 480px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        .container {
+            width: 480px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-}
+
     .about {
-       
+
         padding-bottom: 40px;
     }
-    
+
     .about-container {
         display: block;
     }
@@ -41,7 +42,7 @@
         color: #111518;
         margin-bottom: 8px;
     }
-    
+
     .skills {
         padding-top: 20px;
         margin-bottom: 30px;
@@ -56,12 +57,12 @@
         line-height: 1.21;
         letter-spacing: 0.06em;
         list-style: none;
-       
+
         &:not(:last-child) {
-        margin-bottom: 20px;
+            margin-bottom: 20px;
         }
     }
-    
+
     .skills-item::before {
         position: absolute;
         content: "";
@@ -71,8 +72,9 @@
         background-image: url('../images/skill-list-icon.svg');
         width: 17px;
         height: 14px;
-        
+
     }
+
     .teacher-about::before {
         content: "";
         display: block;
@@ -81,6 +83,7 @@
         height: 2px;
         margin-bottom: 20px;
     }
+
     .teacher-about {
         font-weight: 500;
         font-size: 12px;
@@ -89,12 +92,12 @@
         margin-bottom: 10px;
         list-style: none;
     }
-    
+
     .certificate {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.67;
-        
+
         text-decoration-line: underline;
         color: var(--accent-color);
     }
@@ -122,79 +125,109 @@
         &:not(:last-child) {
             margin-bottom: 20px;
         }
-    }
-    .teacher-about {
-        font-size: 10px;
-        line-height: 2;
-        margin-bottom: 24px;
-    }
-    .teacher-foto {
-        margin-bottom: 0;
-    }
-     .common {
-        display: flex;
-    }
-    .wrapper-img {
-        display: block;
-        margin-right: 60px;
-    }
-    .wrapper-about {
-        display: block;
-        width: 401px;
-    }
-}
 
-@media screen and (min-width: 1680px) {
-    .container {
-        width: 1680px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+        .about {
+            padding-top: 0px;
+            padding-bottom: 40px;
+        }
 
-    .about {
-        padding-top: 0px;
-        padding-bottom: 60px;
-    }
-    .wrapper-img {
-        margin-right: 172px;
-    }
-    .about-title {
-        font-size: 46px;
-        line-height: 1.3;
-        letter-spacing: 0.03em;
-    }
-    .section-title {
-        margin-bottom: 80px;
-    }
-    .teacher-name {
-        font-size: 30px;
-        line-height: 1.23;
-        letter-spacing: 0.08em;
-        margin-bottom: 16px;
-    }
-    .skills-item {
-        font-size: 16px;
-        line-height: 1.25;
-
+        .about__title {
+            margin-bottom: 40px;
+        }
     &:not(:last-child) {
         margin-bottom: 40px;
     }
     }
 
-    .teacher-about {
-        font-size: 18px;
-        line-height: 1.56;
-        margin-bottom: 40px;
-    &__item:not(:last-child){
-        margin-bottom: 35px;
-    }
-}
-    .certificate {
-        font-size: 18px;
-        line-height: 1.56;
-    }
-    .wrapper-about {
-        width: 668px;
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+
+        .teacher-about {
+            font-size: 10px;
+            line-height: 2;
+            margin-bottom: 24px;
+        }
+
+        .teacher-foto {
+            margin-bottom: 0;
+        }
+
+        .common {
+            display: flex;
+        }
+
+        .wrapper-img {
+            display: block;
+            margin-right: 60px;
+        }
+
+        .wrapper-about {
+            display: block;
+            width: 401px;
+        }
     }
 
-}
+    @media screen and (min-width: 1680px) {
+        .container {
+            width: 1680px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .about {
+            padding-top: 0px;
+            padding-bottom: 60px;
+        }
+
+        .wrapper-img {
+            margin-right: 172px;
+        }
+
+        .about-title {
+            font-size: 46px;
+            line-height: 1.3;
+            letter-spacing: 0.03em;
+        }
+
+        .section-title {
+            margin-bottom: 80px;
+        }
+
+        .teacher-name {
+            font-size: 30px;
+            line-height: 1.23;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+        }
+
+        .skills-item {
+            font-size: 16px;
+            line-height: 1.25;
+
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+
+        .teacher-about {
+            font-size: 18px;
+            line-height: 1.56;
+            margin-bottom: 40px;
+
+            &__item:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+
+        .certificate {
+            font-size: 18px;
+            line-height: 1.56;
+        }
+
+        .wrapper-about {
+            width: 668px;
+        }
+
+    }

@@ -14,10 +14,12 @@
 @import './base/common';
 @import './base/container';
 // components
+@import './components/scrollbar';
 @import './components/section-title';
 @import './components/subtitle';
 @import './components/text-description.scss';
 @import './components/navigation-list';
+@import './components/counter';
 // layout:
 @import './layout/hero';
 @import './layout/how-we-do';
@@ -28,9 +30,8 @@
 @import './layout/benefits';
 @import './layout/header';
 @import './layout/mobile-menu';
+@import './layout/reviews';
 @import './layout/advantages';
 @import './layout/contacts';
 @import './layout/footer';
-
-
 

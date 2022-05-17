@@ -12,9 +12,8 @@
         align-items: center;
     }
 
-    .navigation-list__item {
+    .navigation-list__item:not(:last-child){
         margin-right: 40px;
-       
     }
 
     .navigation-list__link {
@@ -28,6 +27,8 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding-top: 40px;
+        padding-bottom: 40px;
 
         &:hover,
         &:focus {
