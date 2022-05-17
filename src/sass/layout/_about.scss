@@ -126,6 +126,35 @@
             margin-bottom: 20px;
         }
 
+    }
+    .teacher-about {
+        font-size: 10px;
+        line-height: 2;
+        margin-bottom: 24px;
+    }
+    .teacher-foto {
+        margin-bottom: 0;
+    }
+     .common {
+        display: flex;
+    }
+    .wrapper-img {
+        display: block;
+        margin-right: 60px;
+    }
+    .wrapper-about {
+        // display: block;
+        width: 401px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .container {
+        width: 1680px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
         .about {
             padding-top: 0px;
             padding-bottom: 40px;
