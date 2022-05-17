@@ -1,81 +1,82 @@
-.problems {
+.section_problems {
     padding-top: 24px;
-    padding-bottom: 24px;
-    }
-
-.problems-linear-gradient {
-        background-color: #111518;
-        color: #ffffff;
-//         background-image: linear-gradient(to bottom, 
-//         #111518 30%,
-//         #ffffff 70%);
-//  }
-}
- 
- .problems-main{
-     padding-top: 24px;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-bottom: 24px;
-     font-weight: 800;
-     font-size: 24px;
 }
 
-.problems-number {
-    background-color: #ffffff;
-    padding-left: 32px;
-    padding-top: 20px;
-    padding-bottom: 24px;
-    padding-right: 20px;
+.orange-text {
+    color: var(--accent-color);
 }
 
-.problems-flex-container {
+.problems-title__row {
     display: block;
-    @media screen and (min-width:768px){
-        display: flex;
-        flex-wrap: wrap;
+}
+
+.section-title_problems {
+    margin-bottom: 24px;
+}
+
+.section_problems {
+    background-image: linear-gradient(to bottom,
+            var(--primary-color) 70%,
+            #fff 30%);
+    padding-bottom: 80px;
+}
+
+// tab
+
+@media screen and (min-width:768px) {
+
+    .section_problems {
+        padding-top: 40px;
     }
-    
-}
 
-.problem-flex-item {
-    margin-bottom: 8px;
-    @media screen and (min-width:768px){
-        width: calc(100% / 2);
+    .section-title_problems {
+        margin-bottom: 30px;
     }
-    @media screen and (min-width:1600px)
-   {
-       width: calc(100% / 3);
-  } 
-}
 
-.problem-flex-item:last-child {
-    margin-bottom: 0;
-}
-
-.problem-flex-item:nth-child(n+5) {
-    @media screen and (min-width:768px){
-        margin-bottom: 0;
+    .section_problems {
+        background-image: linear-gradient(to bottom,
+                var(--primary-color) 61%,
+                #fff 39%);
+        padding-bottom: 40px;
     }
+
 }
 
-.problem-flex-item:nth-last-child(-n + 3) {
-    @media screen and (min-width: 1200px) {
-     margin-bottom: 0;
-      }
- }
+// pc
 
-.problem-number-list {
-    padding-top: 20px;
-    padding-bottom: 24px;
+@media screen and (min-width:1680px) {
+
+    .section_problems {
+        padding-top: 80px;
+
+        background-image: linear-gradient(to bottom,
+                var(--primary-color) 72%,
+                #fff 28%);
+        padding-bottom: 80px;
+    }
+
+    .back_wrapper {
+        width: 1680px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        background-image: url("../images/gray_fire.svg");
+        background-repeat: no-repeat;
+        background-position: right -20px bottom 138px;
+        background-size: 405px 475px;
+        overflow: visible;
+
+    }
+
+    .section-title_problems {
+        margin-bottom: 80px;
+    }
+
+    .container_problems {
+
+    }
+
+
 }
-
-.problem-number-item {
-    color: #111518;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(20 / 14); 
-    font-style: bold;
-}
-
-

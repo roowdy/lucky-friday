@@ -11,3 +11,7 @@
         @include font(800, 46, 60);
     }
 }
+
+.section-title_dark-theme {
+    color: var(--dark-theme-text-color);
+}
