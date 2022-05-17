@@ -170,11 +170,12 @@
     .border {
         margin-top: 10px;
         border-left: 1px solid #FFFFFF;
-        margin-bottom: 80px;
+        margin-bottom: 88px;
     }
 
     .program__title_theme_dark {
         text-align: left;
+        
     }
 
     .program-timetable-list {
@@ -210,6 +211,8 @@
 
     .program-section {
         padding-top: 80px;
+        
+       
     }
 
     .program-container {
@@ -253,7 +256,10 @@
     .program-wrapper {
         padding-left: 136px;
     }
-
+.program__title_theme_dark {
+    padding-bottom: 0;
+    margin-bottom: 88px;
+}
     .program-semesters-list {
         display: flex;
     }
