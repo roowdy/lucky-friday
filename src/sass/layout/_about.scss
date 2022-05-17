@@ -57,6 +57,7 @@
     line-height: 1.21;
     letter-spacing: 0.06em;
     list-style: none;
+
     &:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -71,6 +72,7 @@
     background-image: url('../images/skill-list-icon.svg');
     width: 17px;
     height: 14px;
+
 }
 
 .teacher-about::before {
@@ -95,9 +97,12 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
+
     text-decoration-line: underline;
     color: var(--accent-color);
 }
+
+
 
 // 768px+
 @media screen and (min-width: 768px) {
@@ -119,6 +124,7 @@
     .skills-item {
         font-size: 15px;
         line-height: 1.25;
+
         &:not(:last-child) {
             margin-bottom: 20px;
         }
@@ -144,6 +150,7 @@
     }
 
     .wrapper-about {
+        // display: block;
         width: 401px;
     }
 }
@@ -154,13 +161,16 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .about {
         padding-top: 0px;
         padding-bottom: 60px;
     }
+
     .wrapper-img {
         margin-right: 172px;
     }
+
     .about-title {
         font-size: 46px;
         line-height: 1.3;
@@ -177,6 +187,7 @@
         letter-spacing: 0.08em;
         margin-bottom: 16px;
     }
+
     .skills-item {
         font-size: 16px;
         line-height: 1.25;
@@ -185,10 +196,12 @@
             margin-bottom: 40px;
         }
     }
+
     .teacher-about {
         font-size: 18px;
         line-height: 1.56;
         margin-bottom: 40px;
+
         &__item:not(:last-child) {
             margin-bottom: 35px;
         }
