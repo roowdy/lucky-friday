@@ -70,7 +70,7 @@
     margin-bottom: 4px;
 }
 
-// Title
+// Titlenpn
 .program__title_theme_dark {
     padding-bottom: 40px;
     text-align: center;
@@ -209,7 +209,7 @@
     }
 
     .program-section {
-        padding-top: 80px;
+        padding-top: 88px;
     }
 
     .program-container {
@@ -283,6 +283,11 @@
         }
     }
 
+        .program__title_theme_dark {
+            padding-bottom: 0;
+           
+            
+        }
     .program-semestr-list__title {
         display: inline-block;
         margin-bottom: 24px;
