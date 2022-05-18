@@ -1,5 +1,4 @@
 .section-contacts {
-    width: 480px;
     text-align: center;
     background-color: rgba(17, 21, 24, 0.9);
     background-image: url('../images/contacts/bg-contacts-mobile.png');
@@ -84,6 +83,11 @@ input:invalid {
 .section-contacts__description--active {
     color: var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+    .section-contacts {
+        width: 480px;
+    }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -91,6 +95,8 @@ input:invalid {
         width: 768px;
         background-color: rgba(17, 21, 24, 0.9);
         background-image: url('../images/contacts/bg-contacts-tablet.png');
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .section-contacts__title {
